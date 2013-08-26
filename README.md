@@ -1,6 +1,8 @@
 suggested_longtail
 ==================
 
+[![Code Climate](https://codeclimate.com/github/janpapenbrock/suggested_longtail.png)](https://codeclimate.com/github/janpapenbrock/suggested_longtail)
+
 A ruby tool for fetching Google autocomplete suggestions.
 
 Usage
