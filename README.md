@@ -36,7 +36,7 @@ http://www.metrolyrics.com/hello-world-lyrics-lady-antebellum.html
 Advanced usage
 -----------
 
-`bin/suggest` supports takes three parameters:
+`bin/suggest` takes three parameters:
 
   1. Required. Search phrase to use as base for suggestions.
   2. Optional. Language code. Examples: en, de. Default: en.
