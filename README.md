@@ -5,10 +5,10 @@ suggested_longtail
 
 A ruby tool for fetching Google autocomplete suggestions.
 
-Usage
------
+Basic usage
+-----------
 
-Simply pass your base search phrase to bin/suggest.
+Simply pass your base search phrase to `bin/suggest` to receive an alphabetically sorted list of suggestions.
 
 ```
 ~/suggested_longtail $ bin/suggest "hello world"
@@ -32,3 +32,12 @@ hello world python
 hello world ruby
 http://www.metrolyrics.com/hello-world-lyrics-lady-antebellum.html
 ```
+
+Advanced usage
+-----------
+
+`bin/suggest` supports takes three parameters:
+
+  1. Required. Search phrase to use as base for suggestions.
+  2. Optional. Language code. Examples: en, de. Default: en.
+  3. Optional. Search depth. Default: 1.
