@@ -1,0 +1,27 @@
+#!/usr/bin/ruby
+
+phrase   = ARGV.shift
+language = ARGV.shift || "en"
+depth    = ARGV.shift || 1
+
+if phrase.nil?
+    puts "Get keyword suggestions from Google search."
+    puts "-------------------------------------------"
+    puts ""
+    puts "Example usage:"
+    puts "bin/suggest \"hello\" \"en\" 2"
+    puts ""
+    puts "Parameters:"
+    puts "  1 Required. Search phrase to use as base for suggestions."
+    puts "  2 Optional. Language code. Examples: en, de. Default: en."
+    puts "  3 Optional. Search depth. Default: 1."
+    exit!
+end
+
+require "../lib/google_suggest"
+
+suggest_result = GoogleSuggest::suggest(phrase, language, depth)
+
+suggest_result[:results].sort.each do |result|
+    puts result
+end

@@ -50,6 +50,7 @@ class GoogleSuggest
 		suggestions = suggest_contents[1].flatten
 		
 		need_full_permutations = (suggestions.count == self.class::MAXIMUM_NUMBER_OF_SUGGESTIONS)
+		need_full_permutations = true
 
 		new_suggestions = suggestions - @found
 		if new_suggestions
