@@ -18,7 +18,7 @@ if phrase.nil?
     exit!
 end
 
-require "../lib/google_suggest"
+require_relative "../lib/google_suggest"
 
 suggest_result = GoogleSuggest::suggest(phrase, language, depth)
 
