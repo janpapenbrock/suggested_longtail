@@ -11,7 +11,7 @@ class GoogleSuggest
 
 	def self.suggest phrase, language_code, depth = 999
 		i = self.new
-		i.search(phrase, language_code, depth)
+		i.search(phrase, language_code, depth.to_i)
 	end
 
 	def self.create_suggest_permutations phrase
