@@ -1,5 +1,6 @@
 require 'test/unit'
 
+require_relative '../test_helper.rb'
 require_relative '../../lib/google_suggest.rb'
 
 class GoogleSuggestTest < Test::Unit::TestCase
